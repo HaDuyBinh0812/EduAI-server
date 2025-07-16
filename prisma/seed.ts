@@ -1,5 +1,6 @@
 // prisma/seed.ts
-import { PrismaClient } from "../src/generated/prisma"; // đường dẫn đến Prisma Client
+// đường dẫn đến Prisma Client
+import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();
