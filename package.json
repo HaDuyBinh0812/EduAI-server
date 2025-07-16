@@ -7,11 +7,9 @@
     },
     "scripts": {
         "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-        "build": "tsc",
+        "build": "tsc --project tsconfig.build.json",
         "start": "npm run build && node dist/index.js",
-        "prisma": "prisma",
-        "seed": "prisma db seed",
-        "postinstall": "prisma generate"
+        "seed": "ts-node prisma/seed.ts"
     },
     "keywords": [],
     "author": "",
